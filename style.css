@@ -10,7 +10,7 @@
 .header {
   background: url('img/header.jpg');
   height: 60vh;
-
+  background-repeat: no-repeat;
 }
 .header nav {
   position: fixed;
@@ -351,8 +351,8 @@ footer {
       transition: width 3s;
       position: absolute;
       flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
+      justify-content: space-around;
+      align-items: center;
       top: 0;
       left: 0;
       width:  100%;
@@ -387,6 +387,7 @@ footer {
   .about-content p {
      width: auto;
      padding: 20px;
+     font-size: 23px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -410,7 +411,7 @@ footer {
   .about-row p {
     padding: 20px;
     width: auto;
-
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -435,11 +436,13 @@ footer {
       margin: 50px   auto;
       display: block;
       outline: none;
+      height: auto;
   }
 }
 @media screen and (max-width: 1000px) {
   .works-content img {
       width: 100%;
+      height: auto;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -448,6 +451,7 @@ footer {
       padding: 20px;
       margin: 0 0 0 0;
       width: auto;
+      font-size: 23px;
   }
 }
 @media screen and (max-width: 1600px) {
