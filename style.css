@@ -241,9 +241,9 @@ h3.heading-h3::after {
   box-shadow: 7px 7px 34px -1px rgba(0,0,0,0.75);
 }
 .card:hover {
-  outline: 1px solid white;
-  outline-offset: 10px;
   transition: 1s;
+  -webkit-transform: scale(1.05,1.05);
+  -moz-transform: scale(1.05,1.05);
 }
 .card p {
   width: 400px;
@@ -360,10 +360,25 @@ footer {
       background-color: #1f1f1f;
   }
 }
-
+@media screen and (max-width: 1200px) {
+.header  .navbar-top.active li a {
+      font-size: 40px;
+      position: relative;
+      margin: 0 auto;
+  }
+}
 @media screen and (max-width: 1200px) {
 .header  .navbar-top.active li  {
       margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header .navbar-top.active li a:hover:after {
+    content: '';
+    border: 1px solid white;
+    display: block;
+    position: relative;
+    bottom: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -405,6 +420,11 @@ footer {
   .about-row {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .about-row img {
+    width: 200px;
   }
 }
 @media screen and (max-width: 1480px) {
